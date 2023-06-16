@@ -1,0 +1,66 @@
+/************************** 
+* 1. Helpers
+***************************/
+
+@import "helpers/_variabls";
+@import "helpers/_colors";
+@import "helpers/_mixins";
+@import "components/components.scss";
+@import "helpers/_swiper";
+
+/************************** 
+* 2. Header
+***************************/
+
+@import "layouts/_header";
+
+/************************** 
+* 3. Home Page
+***************************/
+
+@import "sections/_section__abouts"; //Disabled import
+@import "sections/_section__destination";
+@import "sections/_section__qots";
+@import "sections/_section__categories";
+@import "sections/_section__instagram";
+@import "sections/_swiper__story";
+@import "sections/_section__ourstory";
+@import "swiper/_portfolio_style_1";
+
+// Import theme 2
+@import "sections/_section__abouts_style_one";
+@import "sections/_section__posts-style-one";
+@import "sections/_section__product_list_categories";
+@import "sections/_section__choose-us";
+@import "sections/_section-testimonials";
+@import "sections/_section__features-counter";
+@import "sections/_swiper__story_style_one";
+@import "sections/_section__our-team";
+@import "sections/_section_services";
+
+@import "widgets/__heade_sections.scss";
+@import "widgets/_services";
+@import "sections/_section_brands";
+
+/************************** 
+* 4. Pages
+***************************/
+@import "pages/_contact";
+@import "pages/_single-page";
+@import "pages/_error";
+@import "pages/_portfolio";
+@import "pages/_faqs";
+@import "pages/_shop-all";
+
+
+/************************** 
+* 5. Sliders
+***************************/
+
+@import "slider/slider_1.scss";
+
+/************************** 
+* . Footer
+***************************/
+
+@import "layouts/_footer";

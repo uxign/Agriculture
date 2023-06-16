@@ -1,0 +1,280 @@
+.ina-swiper_story {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+    * {
+        transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+    }
+
+    *:hover {
+        transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+    }
+
+    .ina-swiper_container {
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include transition($delay: 0.3s, $function: ease-in-out 0.7s);
+
+        * {
+            transition-timing-function: none;
+            -moz-transition-timing-function: none;
+            -webkit-transition-timing-function: none;
+            -o-transition-timing-function: none;
+            -ms-transition-timing-function: none;
+            transition-duration: 0s;
+            -moz-transition-duration: 0s;
+            -webkit-transition-duration: 0s;
+            -o-transition-duration: 0s;
+            -ms-transition-duration: 0s;
+        }
+
+        .ina-swiper_wrapper {
+            &.swiper-wrapper {
+                @include respond("phone-land") {
+                    display: block !important;
+                    overflow-y: auto !important;
+                    overflow-x: hidden !important;
+                    transform: inherit !important;
+                    transition-duration: inherit !important;
+                    height: auto !important;
+                }
+            }
+
+            .ina-swiper_slide {
+                margin-right: 30px;
+                width: auto;
+                overflow: hidden;
+
+                @include respond("phone-land") {
+                    height: auto !important;
+                    margin-right: 0 !important;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(01) {
+                    width: 550px;
+
+                    @include respond("phone-land") {
+                        width: 100%;
+                    }
+                }
+
+                .ina-swiper_content {
+                    padding: 55px;
+                    vertical-align: middle;
+                    display: table-cell;
+                    text-align: left;
+                    height: 500px;
+                    position: relative;
+
+                    @include respond("phone-land") {
+                        height: auto;
+                        padding: 15px;
+                    }
+                }
+
+                .ina-swiper_content_full {
+                    height: 500px;
+                    display: table-cell;
+                    text-align: left;
+                    vertical-align: middle;
+
+                    @include respond("phone-land") {
+                        height: auto;
+                        display: inherit;
+                    }
+                }
+
+                &:hover {
+                    z-index: 1;
+
+                    img {
+                        opacity: 1;
+                        -webkit-filter: grayscale(0);
+                        -moz-filter: grayscale(0);
+                        -ms-filter: grayscale(0);
+                        -o-filter: grayscale(0);
+                        filter: grayscale(0);
+                        max-height: 500px;
+
+                        @include respond("min-and-with") {
+                            max-height: 450px;
+                        }
+                    }
+
+                    .bottom-text {
+                        @include respond("tab-land") {
+                        }
+                    }
+
+                    .hover-title-box {
+                        opacity: 1;
+                        visibility: visible;
+                        -webkit-transform: translateY(0px);
+                        transform: translateY(0px);
+                        -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+                        transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+
+                        @include respond("tab-land") {
+                        }
+                    }
+                }
+            }
+
+            .hover-title-box {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                bottom: 60px;
+                left: 60px;
+                z-index: 99;
+                -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+                -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+                transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+
+                @include respond("phone-land") {
+                    opacity: 1;
+                    visibility: visible;
+                    right: auto;
+                    text-align: center;
+                    top: inherit;
+                    bottom: 15px;
+                    transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -webkit-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    z-index: 99;
+                    width: 100%;
+                    left: 0;
+                }
+
+                h4,
+                a {
+                    color: var(--ina-theme-color_light_10);
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                h4,
+                p {
+                    background-color: var(--ina-theme-color_2);
+                    padding: 5px 10px;
+                    color: var(--ina-theme-color_light_10);
+
+                    @include respond("phone-land") {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        img {
+            max-height: 450px;
+            // opacity: 0.8;
+            // -webkit-filter: grayscale(1);
+            // filter: grayscale(1);
+            // -webkit-filter: grayscale(1);
+            // -moz-filter: grayscale(1);
+            // -ms-filter: grayscale(1);
+            // -o-filter: grayscale(1);
+            // -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+            // transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+
+            @include respond("min-and-with") {
+                max-height: 450px;
+                // opacity: 1;
+                // filter: contrast(130%);
+                // -webkit-filter: contrast(130%);
+                // -moz-filter: contrast(130%);
+                // -ms-filter: contrast(130%);
+                // -o-filter: contrast(130%);
+            }
+
+            @include respond("phone-land") {
+                width: 100%;
+                max-height: initial;
+                // opacity: 1;
+                // -webkit-filter: grayscale(0);
+                // filter: grayscale(0);
+                // -webkit-filter: grayscale(0);
+                // -moz-filter: grayscale(0);
+                // -ms-filter: grayscale(0);
+                // -o-filter: grayscale(0);
+            }
+        }
+
+        @include respond("phone-land") {
+            height: 100%;
+            top: 0;
+            padding-top: 50px;
+            overflow: hidden;
+            float: left;
+            display: block;
+            position: relative;
+        }
+    }
+
+    @include respond("phone-land") {
+        height: auto;
+    }
+}
+
+//
+
+.ina-swiper_container .swiper-scrollbar {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+    height: 2px;
+    display: none;
+
+    .swiper-scrollbar {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .swiper-scrollbar-drag {
+        border-radius: 0;
+        background: #ff214f;
+    }
+
+    @include respond("phone-land") {
+        display: none;
+    }
+}
+
+.bottom-text {
+    width: 100%;
+    opacity: 1;
+    @include transition($delay: 0.3s, $function: ease-in-out);
+}

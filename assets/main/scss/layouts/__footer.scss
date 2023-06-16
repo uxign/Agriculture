@@ -1,0 +1,339 @@
+/************************** 
+* General Style
+***************************/
+footer {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  text-align: $text-center;
+  overflow: hidden;
+
+  .ina_logo-footer {
+    margin-bottom: 1.875rem;
+  }
+
+  .ina_site-info {
+    p {
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+/************************** 
+* Footer Green
+***************************/
+
+.ina_footer-bg-green {
+  padding: 60px 0;
+  padding-top: 90px;
+  text-align: center;
+
+  .ina_content-footer {
+    position: relative;
+    z-index: 2;
+    .ina_footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include respond("tab-port") {
+        display: inline-block;
+      }
+
+      .ina_footer-right {
+        >div {
+          display: flex;
+          align-items: center;
+
+          @include respond("tab-port") {
+            display: inline-block;
+          }
+        }
+
+        h6 {
+          color: var(--ina-theme-color_light_10);
+          margin-right: 40px;
+
+          @include respond("tab-port") {
+            margin: 30px 0;
+          }
+        }
+
+        .ina_button_light {
+          @include respond("tab-port") {
+            padding: 17px 50px;
+            display: inline-block;
+          }
+
+          .text-button {
+            color: var(--ina-theme-color_text_titre_0);
+
+            @include respond("tab-port") {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    .ina_footer-center {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 40px 0;
+      margin: 40px 0;
+
+      .section-title {
+        font-size: 60px;
+
+        @include respond("tab-port") {
+          font-size: 32px;
+        }
+
+        @include respond("mini-phone") {
+          font-size: 30px;
+        }
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .ina_site-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond("tab-port") {
+        display: inline-block;
+      }
+
+      p {
+        margin-top: -4px;
+        font-size: 16px;
+        color: var(--ina-theme-color_light_10);
+
+        @include respond("tab-port") {
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+.ina_social-footer {
+  @include respond("tab-port") {
+    justify-content: center;
+  }
+
+  li {
+    a {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 100px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: var(--ina-theme-color_light_10);
+      font-size: 16px;
+      @include transition($delay: 0.3s, $function: ease);
+
+      &:hover {
+        background-color: var(--ina-theme-bg_light_10);
+        color: #000000;
+        @include transition($delay: 0.3s, $function: ease);
+      }
+    }
+
+    &:last-child a {
+      margin-right: 0;
+    }
+  }
+}
+
+/************************** 
+* Footer Dark
+***************************/
+
+.footer-dark {
+  background-color: var(--ina-theme-bg_3);
+}
+
+/************************** 
+* Footer Image
+***************************/
+
+.background-img {
+  background-image: url(../../images/new-image/faq-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/************************** 
+* Footer Style One
+***************************/
+
+
+.ina_footer-style-one {
+  padding-bottom: 40px;
+  position: relative;
+
+  .ina_footer-center {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: #ffffff;
+  }
+
+  ::-ms-input-placeholder {
+    color: #ffffff;
+  }
+
+  .ina_site-info p {
+    @include respond('tab-port') {
+      margin-bottom: 15px !important;
+    }
+  }
+}
+
+
+.ina_footer-text {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+
+.ina_footer-menu {
+
+  @include respond('tab-port') {
+
+    margin-bottom: 30px;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: syne;
+
+
+    }
+  }
+}
+
+.ina_footer-newsletter {
+  padding-right: 80px;
+  margin-bottom: 30px;
+
+
+  @include respond('tab-port') {
+    padding-right: 0;
+  }
+
+  p {
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .ina_newsletter-form {
+    position: relative;
+    height: 60px;
+    z-index: 2;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond('tab-port') {
+      height: auto;
+    }
+
+    input {
+      height: 100%;
+      padding: 15px 15px;
+      padding-right: 200px;
+      margin: 0 !important;
+      border-radius: 0;
+      background: hsla(0, 0%, 100%, .2);
+      border: none;
+
+      @include respond('tab-port') {
+        padding-right: 0;
+        height: 60px;
+        margin-bottom: 15px !important;
+      }
+
+
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 18px 20px;
+      background-color: #ffffff;
+      color: var(--bs-body-color);
+      border: none;
+
+      @include respond('mini-phone') {
+        position: initial;
+      }
+    }
+  }
+}
+
+
+.ina_link-footer-help {
+
+
+  @include respond('tab-port') {
+
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: syne;
+    }
+
+  }
+
+}
+
+.ina_site-footer-bg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -155px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: luminosity;
+  opacity: 0.03;
+  z-index: 0;
+}

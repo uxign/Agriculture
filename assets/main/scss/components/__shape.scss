@@ -1,0 +1,44 @@
+.defeault-shape-1 {
+    position: absolute;
+    left: 0;
+    bottom: 24%;
+    max-width: 40%;
+    opacity: 0.1;
+    z-index: -1;
+
+    img {
+
+        max-width: 100%;
+    }
+}
+
+.ina_header-shape-1 {
+
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+         // height: 100px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: -16px;
+        background: url(../../images/new-image/shape-5.png);
+        z-index: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+
+        @include respond('tab-lg') {
+
+            display: none;
+        }
+    }
+}
+
+.container.ina-container.wraper-header-information {
+    z-index: 20;
+    position: relative;
+}

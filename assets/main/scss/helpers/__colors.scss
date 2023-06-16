@@ -1,0 +1,46 @@
+/************************** 
+* Colors
+***************************/
+
+.color-light {
+    color: var(--ina-theme-color_light_10) !important;
+}
+
+.color-dark {
+    color: var(--ina-theme-color_text_titre_0);
+}
+
+.color-text {
+    // color: var(--ina-theme-color_text_titre_4) !important;
+}
+
+.color-text-green {
+    color: var(--ina-theme-color_2) !important;
+}
+
+.color-text-oronge {
+    color: var(--ina-theme-color_4) !important;
+}
+
+/************************** 
+* Background Color
+***************************/
+
+.background-light {
+    background-color: var(--ina-theme-bg_light_10) !important;
+}
+
+.background-green {
+    background-color: var(--ina-theme-bg_4) !important;
+}
+
+
+.background-dark {
+    background-color: var(--ina-theme-bg_3) !important;
+}
+
+
+.background-color-site {
+    background-color: var(--ina-theme-bg_2) !important;
+    background-color: var(--ina-theme-bg_2) !important;
+}

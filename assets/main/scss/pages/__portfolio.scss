@@ -1,0 +1,261 @@
+.no-bord-lg {
+    // padding-bottom: 0 !important;
+    // border: 0 !important;
+}
+
+.ina_thumbnail-animation {
+    // @include transition($delay: 0.5s, $function: ease-in-out);
+
+    // &:hover {
+    //     transform: scale(0.96);
+    //     @include transition($delay: 0.5s, $function: ease-in-out);
+    // }
+}
+
+.ina_full-grid {
+    position: relative;
+    overflow: hidden;
+
+    .ina_grid-style {
+        columns: 3;
+        column-gap: 0;
+        margin-left: -60px;
+        margin-right: -60px;
+        position: relative;
+
+        @include respond("tab-port") {
+            columns: 2;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include respond("phone-land") {
+            columns: 1;
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: center;
+        }
+
+        &:before {
+            // content: "";
+            // position: absolute;
+            // top: -50%;
+            // bottom: -20%;
+            // left: 0;
+            // right: 0;
+            // border-left: 1px solid var(--ina-theme-border_color_7);
+            // border-right: 1px solid var(--ina-theme-border_color_7);
+
+            @include respond("phone-land") {
+                display: none;
+            }
+        }
+
+        .ina_single-item {
+            display: inline-block;
+            position: relative;
+            padding: 0 60px 60px 60px;
+            margin-bottom: 60px;
+            // border-bottom: 1px solid var(--ina-theme-border_color_7);
+            z-index: 1;
+
+            @include respond("tab-port") {
+                padding: 0 12px;
+                margin-bottom: 30px;
+                border: none;
+            }
+
+            .ina_thumbnail-item {
+                .ina-top-thumbnail {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .botom-thumbnail {
+                    text-align: left;
+                    padding-top: 20px;
+
+                    @include respond("mini-phone") {
+                        display: inline-block !important;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:last-child {
+                @include respond("phone-land") {}
+            }
+        }
+
+        &:after {
+            // content: "";
+            // position: absolute;
+            // top: -50%;
+            // bottom: -20%;
+            // left: 33.33333333%;
+            // width: 33.3333333%;
+            // border-left: 1px solid #000000;
+            // border-right: 1px solid #000000;
+            // opacity: 0.05;
+            // pointer-events: none;
+        }
+
+        &.ina_grid-style-1,
+        &.ina_grid-style-2,
+        &.ina_grid-style-4 {
+            // margin: 0;
+
+            &:before,
+            &:after {
+                // display: none;
+            }
+
+            .ina_single-item {
+                // padding: 0;
+                // margin-bottom: 0;
+                // margin-bottom: 30px;
+                // border: none;
+            }
+        }
+
+
+        &.ina_grid-style-1 .ina_single-item .ina_thumbnail-item .botom-thumbnail .entry-title {
+
+            // @include respond('tab-port') {
+            //     margin-bottom: 16px;
+            // }
+        }
+
+        // &.ina_grid-style-2 {
+        //     .ina_single-item {
+        //         .ina_thumbnail-item {
+        //             display: flex;
+
+        //             align-items: center;
+        //             background-color: var(--ina-theme-bg_2) !important;
+
+        //             @include respond("tab-port") {
+        //                 display: inline;
+        //             }
+
+        //             .ina-top-thumbnail,
+        //             .botom-thumbnail {
+        //                 width: 50%;
+
+        //                 @include respond("tab-port") {
+        //                     width: 100%;
+        //                 }
+        //             }
+
+        //             .botom-thumbnail {
+        //                 padding: 3.2em 3.9em 3.8em 3.9em;
+
+        //                 @include respond("tab-port") {
+        //                     background-color: var(--ina-theme-bg_2) !important;
+        //                     padding: 30px;
+        //                 }
+
+        //                 .entry-title {
+        //                     font-size: 32px;
+
+        //                     @include respond("tab-port") {
+        //                         font-size: 24px;
+        //                         margin-bottom: 16px !important;
+        //                     }
+        //                 }
+
+        //                 ul {
+        //                     padding-left: 0;
+        //                     margin-top: 27px;
+
+        //                     li {
+        //                         p {
+        //                             margin-top: 1rem;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        // &.ina_grid-style-4 {
+        //     .ina_thumbnail-item {
+        //         position: relative;
+        //         box-shadow: 4px 3px 40px rgba(16, 33, 34, 6%);
+        //         @include transition($delay: 0.5s, $function: ease-in-out);
+
+        //         .botom-thumbnail {
+        //             position: absolute;
+        //             top: 0;
+        //             width: 100%;
+        //             height: 100%;
+        //             background-color: var(--ina-theme-bg_light_10);
+        //             left: 0;
+        //             right: 0;
+        //             border: 0;
+        //             display: flex;
+        //             flex-direction: column;
+        //             align-items: center;
+        //             justify-content: center;
+        //             @include transition($delay: 0.5s, $function: ease-in-out);
+
+        //             -webkit-transform: translate(0, 15%);
+        //             -moz-transform: translate(0, 15%);
+        //             -ms-transform: translate(0, 15%);
+        //             -o-transform: translate(0, 15%);
+        //             transform: translate(0, 15%);
+        //             opacity: 0;
+        //         }
+
+        //         &:hover {
+        //             .botom-thumbnail {
+        //                 opacity: 1;
+
+        //                 -webkit-transform: translate(0, 0);
+        //                 -moz-transform: translate(0, 0);
+        //                 -ms-transform: translate(0, 0);
+        //                 -o-transform: translate(0, 0);
+        //                 transform: translate(0, 0);
+        //                 @include transition($delay: 0.5s, $function: ease-in-out);
+        //             }
+        //         }
+        //     }
+        // }
+
+
+        &.ina_grid-style-5 {
+
+            .ina_single-item {
+
+                @include respond('tab-port') {
+                    padding: 0;
+                }
+
+                .ina_thumbnail-item {
+
+                    .botom-thumbnail {
+                        @include respond('min-tab') {
+                            display: inline-block !important;
+                            width: 100%;
+                        }
+
+                        .entry-title {
+
+                            @include respond('min-tab') {
+                                margin-bottom: 16px;
+                            }
+                        }
+
+                        .ina-link-animate {
+                            margin-bottom: 0;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}

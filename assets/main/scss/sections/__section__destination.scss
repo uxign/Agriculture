@@ -1,0 +1,183 @@
+.ina-destination {
+    p {
+        margin-top: 46px;
+
+        @include respond('tab-land'){
+            margin-top: 0;
+        }
+
+        @include respond("phone-land") {
+            margin-top: 0;
+            font-size: 16px;
+        }
+    }
+
+    .col-md-4:last-child {
+        .item-destination {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.item-destination {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--ina-theme-bg_light_10);
+    @extend .box-shadow;
+
+    @include respond("phone-land") {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    @include respond('min-and-max-2'){
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .days_number {
+        display: block;
+        position: absolute;
+        top: 72%;
+        left: 75%;
+        z-index: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: $text-center;
+        margin: 0;
+        font-size: 6em;
+        line-height: 1em;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .link_text {
+        font: {
+            family: $font_syne;
+            weight: $font-weight-bold;
+            size: 12px;
+        }
+
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @include transition();
+
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    &:hover {
+        .link_text {
+            color: var(--ina-theme-color_2) !important;
+
+            @include transition();
+        }
+    }
+
+    &.item-destination-style-two {
+        @include respond("tab-port") {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.ina-destination .row:nth-child(02) [class*="col-"]:last-child,
+.ina-destination-pages .row [class*="col-"]:last-child{
+    display: none;
+
+    @include respond('tab-port') {
+        display: inherit;
+    }
+}
+
+.ina_button_icon {
+    margin-top: 46px;
+    position: relative;
+
+    @include respond("phone-land") {
+        margin-top: 0;
+        display: none;
+    }
+
+    .button_icon-simple-text {
+        font: {
+            family: $font_syne;
+            weight: $font-weight-bold;
+            size: 16px;
+        }
+
+        line-height: 20px;
+
+        display: inline-block;
+        overflow: hidden;
+
+        .ina_button_title {
+            padding: 0 2.1em 2px 0;
+        }
+
+        &:before,
+        &:after {
+            content: "\f178";
+            font-family: $font_fontello;
+            font-weight: normal;
+            text-decoration: inherit;
+            width: 1em;
+            position: absolute;
+
+            @include transition();
+        }
+
+        &:before {
+            right: 20px;
+            opacity: 0;
+        }
+
+        &:after {
+            right: 0;
+            opacity: 1;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+                right: 0;
+                -webkit-transition: right 0.3s ease, opacity 0.3s ease;
+                -ms-transition: right 0.3s ease, opacity 0.3s ease;
+                transition: right 0.3s ease, opacity 0.3s ease;
+            }
+
+            &:after {
+                right: -20px;
+                opacity: 0;
+                -webkit-transition: right 0.3s ease, opacity 0.3s ease;
+                -ms-transition: right 0.3s ease, opacity 0.3s ease;
+                transition: right 0.3s ease, opacity 0.3s ease;
+            }
+        }
+    }
+
+    .col-md-4 {
+        &:last-child {
+            .item-destination {
+                :after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

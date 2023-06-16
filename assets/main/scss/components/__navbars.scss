@@ -1,0 +1,382 @@
+@import "../helpers/_variabls";
+@import "../helpers/_mixins";
+
+/************************** 
+*  Custom style Bootstrap
+***************************/
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+.dropdown-toggle:after {
+    display: none;
+}
+
+.navbar-toggler {
+    padding: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/************************** 
+*  Navbar Desktop
+***************************/
+
+.ina-navbar {
+    padding: 0;
+    width: 100%;
+
+    @include respond("tab-port") {
+        overflow: hidden;
+    }
+
+    .ina-wrraper-navbar {
+        @include respond("tab-port") {
+            justify-content: space-between !important;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .ina-navbar-section-header {
+            @include respond("tab-port") {
+                width: 100%;
+                display: flex;
+                flex-wrap: inherit;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .ina-logo-wrapper {
+                @include respond("tab-port") {
+                    display: initial;
+                    width: auto;
+                    max-width: initial;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            .ina-main-menu {
+                @include respond("tab-port") {
+                    padding-top: 24px;
+                }
+
+                .nav-item {
+                    a {
+                        font: {
+                            family: $font_syne;
+                            weight: $font-weight-bold;
+                        }
+
+                        padding: 22px 1rem 23px;
+                        line-height: 22.5px;
+                        position: relative;
+                        display: inline-block;
+
+                        @include respond("tab-port") {
+                            padding: 3px 2em 3px;
+                            padding-left: 0;
+                            font-size: 28px;
+                            line-height: 1.5em;
+                            color: var(--ina-theme-color_text_titre_0);
+                        }
+
+                        &.dropdown-toggle {
+                            &:after {
+                                @include respond("tab-port") {
+                                    display: none !important;
+                                }
+                            }
+                        }
+
+                        &:after {
+                            @include respond("tab-port") {}
+                        }
+                    }
+
+                    .dropdown-menu {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        min-width: 240px;
+                        border: 0;
+                        margin: 0;
+                        border-radius: 0;
+                        -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 8%);
+                        box-shadow: 1px 2px 8px rgba(0, 0, 0, 8%);
+
+                        @include respond("tab-port") {
+                            padding: 0.6em 0 0.4em;
+                            box-shadow: none;
+                            background-color: var(--ina-theme-bg_transparent);
+                        }
+
+                        li {
+                            a {
+                                font: {
+                                    size: 14px;
+                                }
+
+                                padding: 10px 42px 10px 30px;
+
+                                @include respond("tab-port") {
+                                    padding: 0.3em 1.5em 0.3em 1em;
+                                    font-size: 18px;
+                                }
+                            }
+
+                            ul li a {
+                                @include respond("tab-port") {
+                                    padding-left: 2.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ina-humberger-lists {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 16px;
+
+    .ina-humberger-line {
+        height: 1px;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 0px;
+        position: absolute;
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: var(--ina-theme-bg_dark_10);
+        border-radius: 0;
+        -webkit-transition: -webkit-transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+        -webkit-transition: top 0.2s ease-out, background-color 0.2s ease-out, -webkit-transform 0.3s ease;
+        transition: top 0.2s ease-out, background-color 0.2s ease-out, -webkit-transform 0.3s ease;
+        -o-transition: transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+        transition: transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+        transition: transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out, -webkit-transform 0.3s ease;
+    }
+
+    .ina-hmberger-menu-line-1,
+    .ina-hmberger-menu-line-2,
+    .ina-hmberger-menu-line-3 {
+        outline: transparent solid 1px;
+    }
+
+    .ina-hmberger-menu-line-1 {
+        top: 0;
+    }
+
+    .ina-hmberger-menu-line-2 {
+        top: 50%;
+    }
+
+    .ina-hmberger-menu-line-3 {
+        top: 100%;
+    }
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropstart:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    // display: block;
+}
+
+.dropend:hover>.dropdown-menu,
+.dropstart:hover>.dropdown-menu {
+    // position: absolute;
+    // top: 0;
+    // left: 100%;
+}
+
+/************************** 
+*  Zoom line
+***************************/
+.ina_hover_add_line {
+    ul li:not(.menu-collapse) a:after {
+        content: "" !important;
+        display: block !important;
+        position: relative;
+        z-index: 1;
+        top: auto;
+        bottom: -2px;
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        width: 0;
+        height: 2px;
+        margin-left: 0;
+        border: none;
+        @include transition($delay: 0.2s, $function: ease-in-out);
+    }
+
+    .sc_layouts_menu_nav li ul li a:after {
+        display: none !important;
+    }
+
+    ul li:not(.menu-collapse) a:hover:after,
+    ul li:not(.menu-collapse).current-menu-item a:after,
+    ul li:not(.menu-collapse).current-menu-ancestor a:after {
+        width: 100%;
+    }
+}
+
+/* sub zoom line */
+.ina_hover_add_line .sc_layouts_menu_nav {
+    li li:not(.menu-collapse) a span {
+        display: inline-block;
+        padding: 0;
+        word-break: break-word;
+        @include transition(padding-left 0.5s ease-in-out);
+    }
+
+    li li:not(.menu-collapse) a span:after {
+        display: none !important;
+    }
+
+    li li:not(.menu-collapse) a span:after {
+        content: "";
+        display: block !important;
+        position: relative;
+        z-index: 1;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--ina-theme-bg_light_10);
+        @include transition($delay: 0.5s, $function: ease-in-out);
+    }
+
+    li li:not(.menu-collapse) a:hover span:after,
+    li li:not(.menu-collapse).current-menu-item a span:after,
+    li li:not(.menu-collapse).current-menu-ancestor a span:after {
+        width: 100%;
+    }
+
+    li li:not(.menu-collapse)>a:hover span,
+    li li:not(.menu-collapse).current-menu-item a span {
+        padding-left: 9px;
+        @include transition($delay: 0.2s, $function: ease-in-out);
+
+        @include respond("tab-port") {
+            padding-left: 0px;
+        }
+    }
+
+    /* columns menu */
+    li.menu-item-has-children a span {
+        padding-left: 0;
+        @include transition($delay: 0.5s, $function: ease-in-out);
+    }
+
+    li.menu-item-has-children a span:after {
+        @include respond("tab-port") {
+            content: "\f178";
+            font-family: $font_fontello;
+            font-weight: normal;
+            text-decoration: inherit;
+            width: 1em;
+            position: absolute;
+            display: block !important;
+            border: none;
+            top: 4px;
+            font-size: 19px;
+            right: 0;
+            @include transition($delay: 0.5s, $function: ease-in-out);
+        }
+    }
+}
+
+/* sub sub zoom line */
+
+.ina_hover_add_line .sc_layouts_menu_nav {
+    li ul li ul li a span:after {
+        content: "" !important;
+        display: block !important;
+        position: relative;
+        z-index: 1;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 0 !important;
+        height: 1px;
+        background-color: var(--ina-theme-bg_light_10);
+
+        @include transition($delay: 0.5s, $function: ease-in-out);
+    }
+
+    li ul li ul li.current-menu-item a span:after {
+        width: 100% !important;
+    }
+
+    li ul li ul li a:hover span:after {
+        width: 100% !important;
+    }
+}
+
+/************************** 
+*  Navbar colors and hovers
+***************************/
+
+.ina_hover_add_line .sc_layouts_menu_nav {
+    li a {
+        color: var(--ina-theme-color_text_titre_0);
+    }
+
+    li:not(.menu-collapse) a:after,
+    li ul {
+        background-color: var(--ina-theme-bg_3);
+    }
+
+    li ul li a {
+        color: #a1a8a5;
+    }
+
+    li ul li a:hover,
+    li ul li.current-menu-item a,
+    li ul li.current-menu-ancestor>a {
+        color: var(--ina-theme-color_light_10);
+    }
+}
+
+.ina-main-navbar .ina-navbar-section-header {
+    display: none;
+
+    @include respond("tab-port") {
+        display: block;
+    }
+}
+
+.header-style-2 .navbar {
+    padding: 0;
+}
+
+.headerTop.header-style-1 .wraper-header-information {
+    @include respond("tab-port") {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+li.dropend {
+    @include respond("tab-port") {
+        padding: 0.6em 0;
+    }
+}
