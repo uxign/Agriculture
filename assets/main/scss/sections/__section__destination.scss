@@ -2,7 +2,7 @@
     p {
         margin-top: 46px;
 
-        @include respond('tab-land'){
+        @include respond("tab-land") {
             margin-top: 0;
         }
 
@@ -34,7 +34,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    @include respond('min-and-max-2'){
+    @include respond("min-and-max-2") {
         margin-bottom: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -97,9 +97,9 @@
 }
 
 .ina-destination .row:nth-child(02) [class*="col-"]:last-child,
-.ina-destination-pages .row [class*="col-"]:last-child{
+.ina-destination-pages .row [class*="col-"]:last-child {
     display: none;
-    @include respond('tab-port') {
+    @include respond("tab-port") {
         display: inherit;
     }
 }

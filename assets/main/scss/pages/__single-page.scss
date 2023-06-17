@@ -2,13 +2,12 @@
     overflow: hidden;
 
     .ina-container {
-        @include respond ('tab-port') {
+        @include respond("tab-port") {
             max-width: 720px;
-            padding-right: var(--bs-gutter-x, .75rem) !important;
-            padding-left: var(--bs-gutter-x, .75rem) !important;
+            padding-right: var(--bs-gutter-x, 0.75rem) !important;
+            padding-left: var(--bs-gutter-x, 0.75rem) !important;
         }
     }
-
 }
 
 .ina-standar-post-wide {
@@ -73,7 +72,6 @@
 
     p {
         margin-bottom: var(--ina-theme-margin_30);
-
     }
 }
 
@@ -81,7 +79,7 @@
     margin-bottom: var(--ina-theme-margin_30);
 
     iframe {
-        @include respond('tab-port') {
+        @include respond("tab-port") {
             height: 100%;
         }
     }

@@ -5,15 +5,9 @@
 .abouts {
     padding-top: 90px;
     padding-bottom: 90px;
-    background-image: -moz-linear-gradient(90deg,
-            rgb(252, 248, 243) 0%,
-            rgb(255, 255, 255) 100%);
-    background-image: -webkit-linear-gradient(90deg,
-            rgb(252, 248, 243) 0%,
-            rgb(255, 255, 255) 100%);
-    background-image: -ms-linear-gradient(90deg,
-            rgb(252, 248, 243) 0%,
-            rgb(255, 255, 255) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(252, 248, 243) 0%, rgb(255, 255, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(252, 248, 243) 0%, rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(252, 248, 243) 0%, rgb(255, 255, 255) 100%);
     position: relative;
     overflow: hidden;
 
@@ -21,8 +15,6 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-
-
 
     &:before {
         position: absolute;
@@ -117,7 +109,6 @@
             @include respond("tab-port") {
                 width: 100%;
             }
-
 
             @include respond("min-tab") {
                 padding: 0;

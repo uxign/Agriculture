@@ -3478,7 +3478,7 @@ article.ina-post-item {
       height: 40px;
       border-radius: 50%;
       background-color: #fdd062;
-      opacity: .10; }
+      opacity: 0.1; }
     @media only screen and (max-width: 767px) {
       .ina_top-product li .ina_top-product-img {
         max-width: 90px;
@@ -4473,17 +4473,13 @@ article.ina-post-item {
   font-size: 35px;
   line-height: 1.2em; }
 
-:is(.woocommerce-billing-content,
-.checkout-order-review,
-.woocommerce-checkout-payment) {
+:is(.woocommerce-billing-content, .checkout-order-review, .woocommerce-checkout-payment) {
   box-shadow: 4px 3px 40px rgba(16, 33, 34, 0.06);
   padding: 40px;
   margin-bottom: 30px;
   border: 1px solid var(--ina-theme-border_color_7); }
   @media only screen and (max-width: 1024px) {
-    :is(.woocommerce-billing-content,
-    .checkout-order-review,
-    .woocommerce-checkout-payment) {
+    :is(.woocommerce-billing-content, .checkout-order-review, .woocommerce-checkout-payment) {
       padding: 20px; } }
 
 @media only screen and (max-width: 1024px) {
@@ -4491,9 +4487,7 @@ article.ina-post-item {
     margin-left: 0 !important; } }
 
 @media only screen and (max-width: 1024px) {
-  :is(.order_review_heading_payment,
-  .order_review_heading,
-  .woocommerce-checkout-payment) {
+  :is(.order_review_heading_payment, .order_review_heading, .woocommerce-checkout-payment) {
     font-size: 28px; } }
 
 /************************** 
@@ -5720,7 +5714,7 @@ footer {
   --theme-var-margin_bottom: 1.875rem;
   --ina-theme-color_0: #ffffff;
   --ina-theme-color_1: #f9f4e8;
-  --ina-theme-color_2: #3B8056;
+  --ina-theme-color_2: #3b8056;
   --ina-theme-color_3: #008563;
   --ina-theme-color_4: #f4a442;
   --ina-theme-color_5: #f3921c;

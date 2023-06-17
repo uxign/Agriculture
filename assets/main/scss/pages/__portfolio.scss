@@ -54,29 +54,26 @@
             }
 
             &:last-child {
-                @include respond("phone-land") {}
+                @include respond("phone-land") {
+                }
             }
         }
 
         &.ina_grid-style-5 {
-
             .ina_single-item {
-
-                @include respond('tab-port') {
+                @include respond("tab-port") {
                     padding: 0;
                 }
 
                 .ina_thumbnail-item {
-
                     .botom-thumbnail {
-                        @include respond('min-tab') {
+                        @include respond("min-tab") {
                             display: inline-block !important;
                             width: 100%;
                         }
 
                         .entry-title {
-
-                            @include respond('min-tab') {
+                            @include respond("min-tab") {
                                 margin-bottom: 16px;
                             }
                         }
@@ -84,11 +81,9 @@
                         .ina-link-animate {
                             margin-bottom: 0;
                         }
-
                     }
                 }
             }
         }
-
     }
 }

@@ -2,17 +2,11 @@
 * Main Fonts
 ***************************/
 
-$font_Lora: "Lora",
-Sans-serif;
-$font_syne: "Syne",
-sans-serif;
-$font_jost: "Jost",
-sans-serif;
-$font_Handlee:'Handlee',
-cursive;
+$font_Lora: "Lora", Sans-serif;
+$font_syne: "Syne", sans-serif;
+$font_jost: "Jost", sans-serif;
+$font_Handlee: "Handlee", cursive;
 $font_fontello: "cart";
-
-
 
 /************************** 
 * Text Align
@@ -36,8 +30,8 @@ $font-weight-bolder: 900;
 ***************************/
 
 .box-shadow {
-  -webkit-box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
-  box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
+    -webkit-box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
+    box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
 }
 
 /************************** 
@@ -45,9 +39,9 @@ $font-weight-bolder: 900;
 ***************************/
 
 .box-sizing {
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }

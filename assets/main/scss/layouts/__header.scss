@@ -4,11 +4,10 @@
 
 .headerTop {
     .wraper-header-information {
-
-        @include respond ('tab-port') {
+        @include respond("tab-port") {
             max-width: 720px;
-            padding-right: var(--bs-gutter-x, .75rem) !important;
-            padding-left: var(--bs-gutter-x, .75rem) !important;
+            padding-right: var(--bs-gutter-x, 0.75rem) !important;
+            padding-left: var(--bs-gutter-x, 0.75rem) !important;
         }
 
         .ina-wraper-header-top {

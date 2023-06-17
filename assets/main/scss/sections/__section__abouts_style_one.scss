@@ -5,7 +5,8 @@
 .abouts-style-one {
     position: relative;
     overflow: hidden;
-    @include respond("tab-land") {}
+    @include respond("tab-land") {
+    }
     &:before {
         position: absolute;
         left: 0;
@@ -100,7 +101,6 @@
                 width: 100%;
             }
 
-
             @include respond("min-tab") {
                 padding: 0;
             }
@@ -144,7 +144,6 @@
                     }
                 }
 
-
                 p {
                     text-align: $text-left;
                     padding-top: 10px;
@@ -167,18 +166,13 @@
             }
         }
     }
-
-
-
 }
 
 .ina_top-product {
     li {
-
         margin-bottom: 30px;
         display: flex;
         align-items: center;
-
 
         @include respond("mini-phone") {
             display: block;
@@ -188,14 +182,12 @@
             @include respond("phone-land") {
                 margin-top: 30px;
             }
-
         }
 
         &:last-child {
             @include respond("phone-land") {
                 margin-bottom: 0;
             }
-
         }
 
         .ina_top-product-img {
@@ -210,7 +202,7 @@
             justify-content: center;
             position: relative;
             @extend .box-shadow;
-           &:before {
+            &:before {
                 content: "";
                 position: absolute;
                 top: 25px;
@@ -219,7 +211,7 @@
                 height: 40px;
                 border-radius: 50%;
                 background-color: #fdd062;
-                opacity: .10;
+                opacity: 0.1;
             }
 
             @include respond("phone-land") {
@@ -228,7 +220,6 @@
             }
 
             img {
-
                 max-width: 50px;
             }
         }

@@ -3,144 +3,144 @@
 ***************************/
 
 .ina-contact {
-  .ina-contact-information {
-    .ina-contact-wrraper {
-      border-bottom: 1px solid var(--ina-theme-border_color_5);
-      padding: 30px 20px;
-      box-shadow: 4px 3px 40px rgba(16, 33, 34, 6%);
-      margin-bottom: 30px;
-      background-color: var(--ina-theme-bg_light_10);
+    .ina-contact-information {
+        .ina-contact-wrraper {
+            border-bottom: 1px solid var(--ina-theme-border_color_5);
+            padding: 30px 20px;
+            box-shadow: 4px 3px 40px rgba(16, 33, 34, 6%);
+            margin-bottom: 30px;
+            background-color: var(--ina-theme-bg_light_10);
 
-      .ina-icons-block {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        font-size: 25px;
-        border: 1px solid var(--ina-theme-border_color_7);
-        margin-right: 20px;
-        border-radius: 5px;
+            .ina-icons-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                font-size: 25px;
+                border: 1px solid var(--ina-theme-border_color_7);
+                margin-right: 20px;
+                border-radius: 5px;
 
-        @include respond("min-and-with") {
-          display: none;
+                @include respond("min-and-with") {
+                    display: none;
+                }
+
+                @include respond("mini-phone") {
+                    margin-bottom: 30px;
+                }
+
+                i {
+                    color: var(--ina-theme-color_text_titre_1);
+                }
+            }
+
+            + .ina-contact-wrraper + .ina-contact-wrraper {
+                border-bottom: 0;
+            }
+
+            .ina-title-contact {
+                line-height: 1.214em;
+                margin-bottom: 20px;
+            }
         }
 
-        @include respond("mini-phone") {
-          margin-bottom: 30px;
+        ul {
+            li {
+                border: none;
+                background-color: var(--ina-theme-bg_transparent);
+                padding-left: 0;
+                margin-bottom: 20px;
+                padding: 0;
+
+                @include respond("mini-phone") {
+                    display: inline-block !important;
+                    text-align: left;
+                    border-bottom: 1px solid var(--ina-theme-border_color_7);
+                    padding-bottom: 20px;
+                }
+
+                &:last-child {
+                    margin: 0;
+
+                    @include respond("mini-phone") {
+                        border: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .ina-contact-form {
+        padding-left: 120px;
+
+        @include respond("tab-land") {
+            padding-left: 30px;
         }
 
-        i {
-          color: var(--ina-theme-color_text_titre_1);
-        }
-      }
-
-      +.ina-contact-wrraper+.ina-contact-wrraper {
-        border-bottom: 0;
-      }
-
-      .ina-title-contact {
-        line-height: 1.214em;
-        margin-bottom: 20px;
-      }
-    }
-
-    ul {
-      li {
-        border: none;
-        background-color: var(--ina-theme-bg_transparent);
-        padding-left: 0;
-        margin-bottom: 20px;
-        padding: 0;
-
-        @include respond("mini-phone") {
-          display: inline-block !important;
-          text-align: left;
-          border-bottom: 1px solid var(--ina-theme-border_color_7);
-          padding-bottom: 20px;
+        @include respond("tab-port") {
+            padding-left: 0;
         }
 
-        &:last-child {
-          margin: 0;
+        h2 {
+            line-height: 1.214em;
+            margin-bottom: 10px;
 
-          @include respond("mini-phone") {
-            border: none;
-            padding-bottom: 0;
-          }
+            @include respond("mini-phone") {
+                font-size: 30px;
+            }
         }
-      }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        textarea {
+            min-height: 142px;
+        }
     }
-  }
-
-  .ina-contact-form {
-    padding-left: 120px;
-
-    @include respond("tab-land") {
-      padding-left: 30px;
-    }
-
-    @include respond("tab-port") {
-      padding-left: 0;
-    }
-
-    h2 {
-      line-height: 1.214em;
-      margin-bottom: 10px;
-
-      @include respond("mini-phone") {
-        font-size: 30px;
-      }
-    }
-
-    p {
-      margin-bottom: 30px;
-    }
-
-    textarea {
-      min-height: 142px;
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .ina-contact .ina-contact-information ul li {
-    display: inline-block !important;
-    text-align: left;
-    border-bottom: 1px solid var(--ina-theme-border_color_7);
-    padding-bottom: 20px;
+    .ina-contact .ina-contact-information ul li {
+        display: inline-block !important;
+        text-align: left;
+        border-bottom: 1px solid var(--ina-theme-border_color_7);
+        padding-bottom: 20px;
 
-    span {
-      margin-bottom: 30px;
+        span {
+            margin-bottom: 30px;
+        }
     }
-  }
 
-  .ina-contact .ina-contact-information ul li:last-child {
-    border: none;
-    padding-bottom: 0;
-  }
+    .ina-contact .ina-contact-information ul li:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
 }
 
 .ina-email,
 .ina-phone {
-  font: {
-    family: $font_syne;
-    weight: $font-weight-bold;
-    size: 20px;
-  }
+    font: {
+        family: $font_syne;
+        weight: $font-weight-bold;
+        size: 20px;
+    }
 
-  color: var(--ina-theme-color_text_titre_0);
+    color: var(--ina-theme-color_text_titre_0);
 
-  @include respond("tab-port") {
-    font-size: 18px;
-  }
+    @include respond("tab-port") {
+        font-size: 18px;
+    }
 }
 
 .fast-contact-map {
-  iframe {
-    width: 100%;
-    height: 600px;
-  }
+    iframe {
+        width: 100%;
+        height: 600px;
+    }
 }
 
 /************************** 
@@ -148,26 +148,26 @@
 ***************************/
 
 .ina_contact-style-two {
-  background-color: var(--ina-theme-bg_2);
-  position: relative;
+    background-color: var(--ina-theme-bg_2);
+    position: relative;
 
-  .default-shape {
-    @include respond("tab-port") {
-      display: none;
-    }
+    .default-shape {
+        @include respond("tab-port") {
+            display: none;
+        }
 
-    img {
-      width: 100%;
-    }
+        img {
+            width: 100%;
+        }
 
-    .default-shape-one {
-      position: absolute;
-      bottom: 0;
-    }
+        .default-shape-one {
+            position: absolute;
+            bottom: 0;
+        }
 
-    .default-shape-two {
-      position: absolute;
-      top: 0;
+        .default-shape-two {
+            position: absolute;
+            top: 0;
+        }
     }
-  }
 }
