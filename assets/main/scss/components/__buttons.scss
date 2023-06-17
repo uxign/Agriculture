@@ -86,7 +86,6 @@
     vertical-align: middle;
 }
 
-
 .ina_button_green {
     background-color: var(--ina-theme-bg_4);
     border-width: 1px;
@@ -96,10 +95,8 @@
     @include transition($delay: 0.3s, $function: ease);
 
     &:hover {
-        // background-color: var(--ina-theme-bg_light_10);
         background-color: #629977;
         border-color: #629977;
-        // color: var(--ina-theme-color_text_titre_0);
         @include transition($delay: 0.3s, $function: ease);
 
         span {
@@ -119,33 +116,27 @@
     }
 }
 
-
 .ina_button_color_1 {
-    background-color: #A77C52;
+    background-color: #a77c52;
     border-width: 1px;
     border-style: solid;
-    border-color: #A77C52;
+    border-color: #a77c52;
     @include transition($delay: 0.3s, $function: ease);
 
     &:hover {
         background-color: var(--ina-theme-bg_light_10);
-        border-color: #A77C52;
+        border-color: #a77c52;
         color: var(--ina-theme-color_text_titre_0);
 
         @include transition($delay: 0.3s, $function: ease);
     }
 }
 
-
 .ina-button-submit {
     padding: 17px 25px;
     width: auto !important;
 }
 
-
-
-
-// 
 /************************** 
 * Button pallete Icons
 ***************************/

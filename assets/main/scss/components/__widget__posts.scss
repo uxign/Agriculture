@@ -13,11 +13,8 @@
 
     .section-tagline {
         font: {
-            // family: $font_syne;
             family: $font_Handlee;
-            // weight: $font-weight-bold;
             weight: 800;
-            // size: 14px;
             size: 18px;
         }
 
@@ -55,9 +52,6 @@
     font-size: 25px;
 }
 
-.section-description {
-    // margin-top: 46px;
-}
 
 /***************************** 
 *  Widget Standar post style 1
@@ -158,14 +152,6 @@
             margin-top: 27px;
             margin-bottom: 1rem;
         }
-    }
-}
-
-.ina-container-posts [class*="col-"]:last-child {
-    // display: none;
-
-    @include respond("min-and-max-3") {
-        // display: inherit;
     }
 }
 

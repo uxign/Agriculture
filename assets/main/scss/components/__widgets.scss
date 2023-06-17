@@ -181,8 +181,6 @@
 ***************************/
 
 .ina_bar-search {
-    // margin-left: 26px;
-    // margin-right: 26px;
     margin: 0 26px;
     margin-left: 22px;
 
@@ -1051,52 +1049,53 @@ article {
     }
 }
 
+
 /******************************* 
 *  Cursor
 ********************************/
 
-// @media (any-pointer: fine) {
-//     .c-cursor {
-//         display: block;
-//     }
+@media (any-pointer: fine) {
+    .c-cursor {
+        display: block;
+    }
 
-//     .c-cursor__inner {
-//         pointer-events: none;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         mix-blend-mode: difference;
-//         border-radius: 50%;
-//         z-index: 50;
-//     }
+    .c-cursor__inner {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        z-index: 50;
+    }
 
-//     .c-cursor__side {
-//         position: absolute;
-//         top: 50%;
-//         width: 5px;
-//         height: 1px;
-//         background-color: var(--ina-theme-bg_light_10);
-//         opacity: 0;
-//     }
+    .c-cursor__side {
+        position: absolute;
+        top: 50%;
+        width: 5px;
+        height: 1px;
+        background-color: var(--ina-theme-bg_light_10);
+        opacity: 0;
+    }
 
-//     .c-cursor__side--left {
-//         right: calc(100% + 5px);
-//     }
+    .c-cursor__side--left {
+        right: calc(100% + 5px);
+    }
 
-//     .c-cursor__side--right {
-//         left: calc(100% + 5px);
-//     }
+    .c-cursor__side--right {
+        left: calc(100% + 5px);
+    }
 
-//     .c-cursor__inner--circle {
-//         width: 40px;
-//         height: 40px;
-//         border: 1px solid var(--ina-theme-color_light_4);
-//     }
-// }
+    .c-cursor__inner--circle {
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--ina-theme-color_light_4);
+    }
+}
 
 .links-wrapper {
     .link {
-        @include transition($delay: 300ms, $function: ease-in-out);
+        @include transition($delay: 250ms, $function: ease-in-out);
     }
 }
 
@@ -1104,14 +1103,14 @@ article {
 *  Custom Css Scrollbar
 ********************************/
 
-// .scrollbar-thumb {
-//     background-color: var(--ina-theme-color_4) !important;
-//     border-radius: 0px !important;
-// }
+.scrollbar-thumb {
+    background-color: var(--ina-theme-color_4) !important;
+    border-radius: 0px !important;
+}
 
-// .scrollbar-track {
-//     background-color: var(--ina-theme-border_color_5) !important;
-// }
+.scrollbar-track {
+    background-color: var(--ina-theme-border_color_5) !important;
+}
 
 /******************************* 
 *  Audio player
@@ -1340,27 +1339,6 @@ article {
 }
 
 /************************** 
-* About Top header
-***************************/
-
-// .abouts-head-section {
-//     position: relative;
-//     text-align: center;
-
-//     img {
-//         width: 100%;
-//     }
-
-//     .ina-title-section {
-//         position: absolute;
-//         top: 50%;
-//         transform: translatey(-50%);
-//         left: 0;
-//         width: 100%;
-//     }
-// }
-
-/************************** 
 *  Paginate
 ***************************/
 
@@ -1440,7 +1418,6 @@ article {
     background-color: var(--ina-theme-bg_4);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 10%);
     position: relative;
-    // margin: 0 30px;
     z-index: 1;
     padding: 50px;
     margin-bottom: 60px;
@@ -1508,20 +1485,22 @@ article {
 }
 
 
-
-// 
-
+/************************** 
+*  Project info
+***************************/
 
 .project-info .ina_project-basic-info li a {
     float: right;
     background-color: #fdd062;
-    span{
+
+    span {
         margin: 0;
     }
 }
 
-
-// benefits
+/************************** 
+*  Benefits
+***************************/
 
 .ina_benefits-wrapper {
     display: grid;
@@ -1542,19 +1521,20 @@ article {
     }
 }
 
-.ina_benefit-item-icon img {
-    height: 50px;
-}
-
-
 
 
 .ina_benefit-item-icon {
     margin-bottom: 15px;
+
+    img {
+        height: 50px;
+    }
 }
 
 
-// 
+/************************** 
+*  ina services item 1
+***************************/
 
 .ina_services-item-1 {
     justify-content: flex-start;

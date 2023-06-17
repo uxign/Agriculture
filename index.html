@@ -15,6 +15,17 @@
 </head>
 
 <body>
+
+    <!-- start section cursor -->
+    <div class="js-cursor cursor">
+        <div class="c-cursor__inner c-cursor__inner--circle js-cursor-inner">
+            <div class="c-cursor__side c-cursor__side--left js-cursor-right"></div>
+            <div class="c-cursor__side c-cursor__side--right js-cursor-left"></div>
+        </div>
+    </div>
+    <!-- End section cursor -->
+
+
     <!-- start section top header -->
     <header class="headerTop header-style-2 ina_header-shape-1">
         <div class="container ina-container wraper-header-information">
@@ -226,7 +237,9 @@
                     <div class="ina_bar-search">
                         <!-- <span class="search"></span> -->
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-search">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
@@ -246,7 +259,7 @@
     </header>
     <!-- End section top header -->
     <!-- start section slider -->
-    <section class="ina_main-slider">
+    <section class="ina_main-slider slider-active">
         <div class="ina_item-slider">
             <div class="slides ina_main-items">
                 <div class="slide ina_main-slide is-active">
@@ -764,7 +777,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination ina_swiper-pagination-style-one"></div>
+                <!-- <div class="swiper-pagination ina_swiper-pagination-style-one"></div> -->
             </div>
         </div>
     </div>
@@ -1701,6 +1714,8 @@
     <script src="assets/vendor/popper/popper.min.js"></script>
     <!-- Bootstrap -->
     <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- Custom Cursor animation -->
+    <script src="assets/js/cursor-animation.js"></script>
     <!-- Swiper JS -->
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src=""></script>
@@ -1711,6 +1726,42 @@
     <script src="assets/js/slider.js"></script>
     <!-- Main Custom JQuery -->
     <script src="assets/js/main.js"></script>
+
+    <style>
+        .js-cursor {
+            position: absolute;
+        }
+
+        .drag .c-cursor__inner {
+            position: relative;
+        }
+
+        .c-cursor__inner--circle.drag {
+            width: 75px;
+            height: 75px;
+            border: none;
+            font-size: 20px;
+            color: #ffffff;
+            background: #323232;
+            mix-blend-mode: unset;
+        }
+
+        .drag::before {
+            content: '\f0ec';
+            font-family: "cart";
+            display: block;
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 36%;
+            font-size: 20px;
+        }
+    </style>
+
+
+
+
 </body>
 
 </html>

@@ -3,12 +3,12 @@ Error: Undefined mixin 'respond'.
         on line 50 of scss/slider/slider_1.scss, in `respond'
         from line 50 of scss/slider/slider_1.scss
 
-45:         .caption {
-46:             text-align: left;
-47:             padding: 0 12px;
-48: 
+45: 
+46:         .caption {
+47:             text-align: left;
+48:             padding: 0 12px;
 49: 
-50:             @include respond('tab-lg') {
+50:             @include respond("tab-lg") {
 51:                 padding: 0 100px;
 52:             }
 53:         }
@@ -95,4 +95,4 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 50 of scss/slider/slider_1.scss, in `respond'\A         from line 50 of scss/slider/slider_1.scss\A \A 45:         .caption {\A 46:             text-align: left;\A 47:             padding: 0 12px;\A 48: \A 49: \A 50:             @include respond('tab-lg') {\A 51:                 padding: 0 100px;\A 52:             }\A 53:         }\A 54: \A 55:         .image-container {"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 50 of scss/slider/slider_1.scss, in `respond'\A         from line 50 of scss/slider/slider_1.scss\A \A 45: \A 46:         .caption {\A 47:             text-align: left;\A 48:             padding: 0 12px;\A 49: \A 50:             @include respond(\"tab-lg\") {\A 51:                 padding: 0 100px;\A 52:             }\A 53:         }\A 54: \A 55:         .image-container {"; }

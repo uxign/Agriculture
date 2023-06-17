@@ -3,14 +3,9 @@
 ***************************/
 
 .abouts-style-one {
-
     position: relative;
     overflow: hidden;
-
     @include respond("tab-land") {}
-
-
-
     &:before {
         position: absolute;
         left: 0;
@@ -122,11 +117,6 @@
                 @include respond("tab-land") {
                     padding-right: 0;
                     padding-left: 0;
-                }
-
-                .section-tagline {
-                    // color: var(--ina-theme-color_3);
-                    // text-transform: capitalize !important;
                 }
 
                 h2 {
@@ -241,10 +231,6 @@
 
                 max-width: 50px;
             }
-        }
-
-        h5 {
-            // color: var(--ina-theme-color_2);
         }
 
         p {

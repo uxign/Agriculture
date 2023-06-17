@@ -4,6 +4,7 @@
     width: 100%;
     height: calc(100vh - 115px);
     z-index: 1;
+    cursor: none;
 
     .ina_item-slider {
         position: absolute;
@@ -46,8 +47,7 @@
             text-align: left;
             padding: 0 12px;
 
-
-            @include respond('tab-lg') {
+            @include respond("tab-lg") {
                 padding: 0 100px;
             }
         }
@@ -112,14 +112,11 @@
             color: #ffffff;
 
             strong {
-
                 display: inherit;
             }
 
-
-            @include respond('tab-port') {
+            @include respond("tab-port") {
                 font-size: 30px;
-
             }
         }
 
@@ -130,30 +127,23 @@
             p {
                 color: #ffffff;
 
-                @include respond('a-kindle') {
-
+                @include respond("a-kindle") {
                     display: none;
                 }
             }
         }
 
         .ina_button {
-
-            @include respond('tab-port') {
+            @include respond("tab-port") {
                 padding: 17px 50px;
-
             }
 
             .ina_text-button-slider {
-                @include respond('tab-port') {
+                @include respond("tab-port") {
                     display: block;
-
                 }
             }
         }
-
-
-
     }
 
     .ina_pagination-slider {
@@ -187,7 +177,6 @@
                 z-index: 2;
                 transition: width 0.2s ease;
             }
-
         }
     }
 
@@ -212,7 +201,6 @@
 
         .prev {
             left: 30px;
-
         }
 
         .next {
@@ -228,27 +216,9 @@
             transition: left 0.2s ease;
         }
 
-
-
-        @include respond('tab-port') {
-
+        @include respond("tab-port") {
             display: none;
         }
-    }
-
-    &:after {
-        // position: absolute;
-        // left: 0;
-        // top: -84px;
-        // content: "";
-        // height: 100px;
-        // width: 100%;
-        // background: url(../../images/new-image/shape-5.png);
-        // z-index: 2;
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position: bottom;
-
     }
 
     &:before {
@@ -266,23 +236,13 @@
         z-index: 999999;
     }
 
-
     &:after,
     &:before {
-        @include respond('tab-land') {
+        @include respond("tab-land") {
             display: none;
         }
     }
-
 }
-
-
-
-
-
-
-
-
 
 .is-active:before {
     position: absolute;

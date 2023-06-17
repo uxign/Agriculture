@@ -2,7 +2,6 @@
     background-image: url(../../images/new-image/shape-6.png);
     background-size: cover;
     background-position: bottom center;
-    // padding-bottom: 80px !important;
     position: relative;
 
     .ina_testimonials-item {
@@ -62,12 +61,9 @@
                 line-height: 16px;
                 letter-spacing: 0.78px;
             }
-
         }
     }
 }
-
-
 
 .ina_testimonials:before {
     content: "";
@@ -80,35 +76,13 @@
     position: absolute;
 }
 
-
-
-// 
-
-
 /************************** 
 *  Swiper Testimonials 1
 ***************************/
 .ina_swiper-testimonials-style-one {
-
     .ina_swiper-pagination-style-one {
         position: relative;
         display: block;
         margin-top: 150px;
-
-        // .swiper-pagination-bullet {
-        //     background: transparent;
-        //     height: 20px;
-        //     width: 20px;
-        //     border: 1px solid #ccc;
-        //     position: relative;
-        //     opacity: 1;
-        //     margin: 0 5px !important;
-        //     border-radius: 50%;
-        // }
-
-        // .swiper-pagination-bullet-active {
-        //     border: 1px solid var(--ina-theme-bg_4);
-        // }
     }
-
 }

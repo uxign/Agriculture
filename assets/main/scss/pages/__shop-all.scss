@@ -26,8 +26,6 @@
 
     i {
         color: #ffbc3b;
-        // font-size: 11px;
-
         +i {
             margin-left: 4px;
         }
@@ -127,7 +125,6 @@
                 position: relative;
                 display: block;
                 overflow: hidden;
-                // background-color: var(--ina-theme-bg_2) !important;
                 z-index: 1;
                 padding: 60px;
 
@@ -220,8 +217,6 @@
         height: 40px;
         width: 40px;
         background-color: var(--ina-theme-bg_2);
-        // font-size: 14px;
-        // color: #37542b;
         transition: all 200ms linear;
         transition-delay: 0.1s;
 
@@ -566,7 +561,6 @@
             line-height: 22px;
             border: none;
             padding: 15px 19px 13px;
-            // background-color: var(--ina-theme-bg_2);
             background-color: #f8f8f8;
 
             &:first-child {

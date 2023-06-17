@@ -4,7 +4,7 @@
 
 .swiper-wrapper {
     will-change: transform;
-    cursor: grab;
+    cursor: none !important;
 }
 
 .swiper-pagination {

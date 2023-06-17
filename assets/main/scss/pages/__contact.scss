@@ -4,13 +4,9 @@
 
 .ina-contact {
   .ina-contact-information {
-    // background-color: var(--ina-theme-bg_light_10);
-    // padding-bottom: 30px;
-
     .ina-contact-wrraper {
       border-bottom: 1px solid var(--ina-theme-border_color_5);
       padding: 30px 20px;
-      // margin-bottom: 0;
       box-shadow: 4px 3px 40px rgba(16, 33, 34, 6%);
       margin-bottom: 30px;
       background-color: var(--ina-theme-bg_light_10);
@@ -26,7 +22,7 @@
         margin-right: 20px;
         border-radius: 5px;
 
-        @include respond('min-and-with') {
+        @include respond("min-and-with") {
           display: none;
         }
 
@@ -147,33 +143,21 @@
   }
 }
 
-.ina-contact [class*="col-"] {
-  @include respond("mini-phone") {
-    // padding-left: 0;
-    // padding-right: 0;
-  }
-}
-
-
-
 /************************** 
 *  Contact style one
 ***************************/
 
 .ina_contact-style-two {
-  // background-color: #f8f8f8;
   background-color: var(--ina-theme-bg_2);
   position: relative;
 
   .default-shape {
-
-    @include respond('tab-port') {
+    @include respond("tab-port") {
       display: none;
     }
 
     img {
-
-      width: 100%
+      width: 100%;
     }
 
     .default-shape-one {
@@ -181,17 +165,9 @@
       bottom: 0;
     }
 
-
     .default-shape-two {
       position: absolute;
       top: 0;
     }
-
   }
-
-
-
-
-
-
 }

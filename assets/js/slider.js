@@ -76,6 +76,8 @@ function slideshowSwitch(slideshow, index, auto) {
             , zIndex: 2
         });
 
+        
+
         newSlideImage.css({
             width: slideshow.width(),
             right: newSlideImageRight,

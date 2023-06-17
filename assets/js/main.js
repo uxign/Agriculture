@@ -6,11 +6,10 @@ $(function () {
   //   Js cursor link hover
   // ========================================================================= //
 
-  // jQuery('.js-cursor-inner').hover(
-  //   function () { $(this).addClass('js-link-hover') },
-  //   function () { $(this).removeClass('js-link-hover') }
-  // )
-
+  jQuery('.js-cursor-inner').hover(
+    function () { $(this).addClass('js-link-hover') },
+    function () { $(this).removeClass('js-link-hover') }
+  )
 
   // ========================================================================= //
   //  Bar search open/close
@@ -261,8 +260,8 @@ $(function () {
     slidesPerView: 5,
     spaceBetween: 30,
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
 
     breakpoints: {
@@ -283,7 +282,7 @@ $(function () {
         spaceBetween: 15,
       },
     },
-});
+  });
 
 
 

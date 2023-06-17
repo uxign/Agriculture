@@ -37,9 +37,7 @@
 @import "sections/_swiper__story_style_one";
 @import "sections/_section__our-team";
 @import "sections/_section_services";
-
 @import "widgets/__heade_sections.scss";
-@import "widgets/_services";
 @import "sections/_section_brands";
 
 /************************** 
@@ -58,6 +56,13 @@
 ***************************/
 
 @import "slider/slider_1.scss";
+
+
+/************************** 
+* . Footer
+***************************/
+
+@import "layouts/_sidebar";
 
 /************************** 
 * . Footer

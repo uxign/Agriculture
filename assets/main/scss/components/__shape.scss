@@ -13,13 +13,10 @@
 }
 
 .ina_header-shape-1 {
-
     position: relative;
-
     &:after {
         content: "";
         position: absolute;
-         // height: 100px;
         height: 100%;
         width: 100%;
         left: 0;
@@ -38,7 +35,7 @@
     }
 }
 
-.container.ina-container.wraper-header-information {
+.wraper-header-information {
     z-index: 20;
     position: relative;
 }

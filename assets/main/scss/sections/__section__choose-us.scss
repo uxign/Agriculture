@@ -3,24 +3,8 @@
 ***************************/
 
 .ina_choose-us {
-    // padding-top: 90px;
-    // padding-bottom: 90px;
-    // background-image: -moz-linear-gradient(90deg,
-    //         rgb(252, 248, 243) 0%,
-    //         rgb(255, 255, 255) 100%);
-    // background-image: -webkit-linear-gradient(90deg,
-    //         rgb(252, 248, 243) 0%,
-    //         rgb(255, 255, 255) 100%);
-    // background-image: -ms-linear-gradient(90deg,
-    //         rgb(252, 248, 243) 0%,
-    //         rgb(255, 255, 255) 100%);
     position: relative;
     overflow: hidden;
-
-    @include respond("tab-land") {
-        // padding-top: 5rem;
-        // padding-bottom: 5rem;
-    }
 
     &:before {
         position: absolute;
@@ -137,7 +121,6 @@
 
                 .section-tagline {
                     color: var(--ina-theme-color_3);
-                    // text-transform: capitalize !important;
                 }
 
                 h2 {
@@ -273,17 +256,11 @@
     }
 }
 
-// 
-
-
 .accordion .accordion-item {
     margin-bottom: 15px;
-
     .accordion-button {
         font-size: 18px;
-
     }
-
     .accordion-body p {
         padding: 0 !important;
     }

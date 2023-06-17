@@ -2,12 +2,15 @@
 *  Widget Standar Service style 1
 ******************************/
 
-
-.ina_services-style-one{
+.ina_services-style-one {
     position: relative;
     padding-bottom: 0;
+    cursor: none;
 
     .ina-standard-posts {
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
         @extend .box-shadow;
         .entry-media {
             .ina-post-thumbnail {
@@ -43,35 +46,19 @@
     }
     
 
-} 
-
-
-.ina_services-style-one {
-    position: relative;
-    padding-bottom: 0;
-
     .section-description {
         margin-top: 46px;
         @include respond("tab-land") {
             margin-top: 0;
         }
     }
-}
-
-
-.ina_services-style-one:after {
-    content: "";
-    width: 100%;
-    height: 24%;
-    position: absolute;
-    // background-color: #f8f8f8;
-    background-color: var(--ina-theme-bg_2);
-    left: 0;
-    bottom: 0;
-}
-
-.ina_services-style-one .ina-standard-posts {
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-}
+    &:after {
+        content: "";
+        width: 100%;
+        height: 24%;
+        position: absolute;
+        background-color: var(--ina-theme-bg_2);
+        left: 0;
+        bottom: 0;
+    }
+} 

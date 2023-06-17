@@ -113,12 +113,6 @@
                     z-index: 1;
 
                     img {
-                        // opacity: 1;
-                        // -webkit-filter: grayscale(0);
-                        // -moz-filter: grayscale(0);
-                        // -ms-filter: grayscale(0);
-                        // -o-filter: grayscale(0);
-                        // filter: grayscale(0);
                         max-height: 500px;
 
                         @include respond("min-and-with") {
@@ -196,36 +190,14 @@
 
         img {
             max-height: 450px;
-            // opacity: 0.8;
-            // -webkit-filter: grayscale(1);
-            // filter: grayscale(1);
-            // -webkit-filter: grayscale(1);
-            // -moz-filter: grayscale(1);
-            // -ms-filter: grayscale(1);
-            // -o-filter: grayscale(1);
-            // -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-            // transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 
             @include respond("min-and-with") {
                 max-height: 450px;
-                // opacity: 1;
-                // filter: contrast(130%);
-                // -webkit-filter: contrast(130%);
-                // -moz-filter: contrast(130%);
-                // -ms-filter: contrast(130%);
-                // -o-filter: contrast(130%);
             }
 
             @include respond("phone-land") {
                 width: 100%;
                 max-height: initial;
-                // opacity: 1;
-                // -webkit-filter: grayscale(0);
-                // filter: grayscale(0);
-                // -webkit-filter: grayscale(0);
-                // -moz-filter: grayscale(0);
-                // -ms-filter: grayscale(0);
-                // -o-filter: grayscale(0);
             }
         }
 
@@ -281,13 +253,9 @@
 
 
 // 
-// 
-// 
-// 
-//
 
 
-.ina-swiper_story.ina-swiper_story_style_one .ina-swiper_container img {
+.ina-swiper_.ina-swiper_story_style_one .ina-swiper_container img {
     -webkit-filter: none;
     filter: none;
     -webkit-filter: none;
