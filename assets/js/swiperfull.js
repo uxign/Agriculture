@@ -7,7 +7,7 @@ var swiperBottomScrollbarFull = new Swiper(
         preventClicks: true,
         spaceBetween: 30,
         keyboardControl: true,
-        speed: 1000,
+        speed: 1900,
         pagination: {
             // el: null,
             el: ".swiper-pagination",
@@ -15,12 +15,13 @@ var swiperBottomScrollbarFull = new Swiper(
         scrollbar: {
             el: ".swiper-scrollbar",
             draggable: true,
-            hide: false,
+            hide: true,
             snapOnRelease: true,
         },
         mousewheel: {
             enable: false,
         },
+
         keyboard: {
             enabled: true,
         },

@@ -3818,7 +3818,7 @@ article.ina-post-item {
         height: 46px;
         border-radius: 50%;
         background-color: #fdd062;
-        opacity: .10; }
+        opacity: 0.1; }
       .ina_features-counter .features-counter .ina_counter-img .ina_img-counter {
         height: 60px;
         display: block;
@@ -5929,6 +5929,9 @@ ul {
 
 .mb-30 {
   margin-bottom: 1.875rem !important; }
+
+.mb-80 {
+  margin-bottom: 5rem !important; }
 
 .mrb-60 {
   margin-bottom: 3.75rem; }

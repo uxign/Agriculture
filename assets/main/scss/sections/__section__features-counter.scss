@@ -18,7 +18,6 @@
             display: block;
         }
 
-
         .ina_counter-img {
             display: inline-block;
             min-width: 90px;
@@ -35,9 +34,8 @@
                 height: 46px;
                 border-radius: 50%;
                 background-color: #fdd062;
-                opacity: .10;
+                opacity: 0.1;
             }
-
 
             .ina_img-counter {
                 height: 60px;
@@ -56,8 +54,7 @@
             margin-top: 55px;
             display: block;
 
-
-            @include respond('laptop') {
+            @include respond("laptop") {
                 font-size: 20px;
                 min-height: 72px;
             }
@@ -84,7 +81,6 @@
     }
 
     .col-lg-4:last-child {
-
         .features-counter {
             @include respond("phone-land") {
                 margin-bottom: 0;
