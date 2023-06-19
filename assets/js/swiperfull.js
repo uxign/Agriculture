@@ -6,29 +6,45 @@ var swiperBottomScrollbarFull = new Swiper(
         grabCursor: true,
         preventClicks: true,
         spaceBetween: 30,
-        keyboardControl: true,
-        speed: 1900,
+        //keyboardControl: true,
+        //observer: true,  //theme
+        speed: 1000,
+        //centeredSlides: true,   //theme
         pagination: {
-            // el: null,
-            el: ".swiper-pagination",
+            el: null,
+            // el: ".swiper-pagination",
         },
         scrollbar: {
             el: ".swiper-scrollbar",
-            draggable: true,
-            hide: true,
-            snapOnRelease: true,
-        },
-        mousewheel: {
-            enable: false,
+            draggable: false,
+            hide: false,
+            snapOnRelease: false,
         },
 
-        keyboard: {
-            enabled: true,
+
+        mousewheel: {
+            releaseOnEdges: true,
+            invert: false, //theme
         },
+
+        autoplay: {
+            delay: 3000
+        },
+
+
+        keyboard: {
+            enabled: false,
+            onlyInViewport: false, //themes
+        },
+
+
+
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+
+
         breakpoints: {
             767: {
                 scrollbar: {

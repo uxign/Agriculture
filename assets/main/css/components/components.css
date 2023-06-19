@@ -1851,9 +1851,6 @@ article.ina-post-item {
     margin-bottom: 0;
     margin-left: 15px; }
 
-@media only screen and (max-width: 480px) {
-  .ina-breadcrumb {
-    display: none; } }
 .ina-breadcrumb .breadcrumb {
   font-family: "Syne", sans-serif;
   font-weight: 700;

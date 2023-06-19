@@ -1,6 +1,6 @@
 .ina-breadcrumb {
     @include respond("a-kindle") {
-        display: none;
+        // display: none;
     }
 
     .breadcrumb {

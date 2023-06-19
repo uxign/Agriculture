@@ -267,7 +267,7 @@ $(function () {
 
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             640: {
@@ -279,7 +279,7 @@ $(function () {
                 spaceBetween: 12,
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 15,
             },
         },
