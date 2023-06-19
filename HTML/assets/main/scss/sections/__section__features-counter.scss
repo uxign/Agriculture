@@ -1,0 +1,90 @@
+.ina_features-counter {
+    position: relative;
+
+    .features-counter {
+        position: relative;
+        padding: 30px;
+        background-color: #ffffff;
+        @extend .box-shadow;
+
+        @include respond("tab-port") {
+            margin-bottom: 30px;
+        }
+
+        i {
+            font-size: 50px;
+            color: var(--ina-theme-color_2);
+            text-shadow: 0px 16px 30px rgba(59, 128, 86, 0.88);
+            display: block;
+        }
+
+        .ina_counter-img {
+            display: inline-block;
+            min-width: 90px;
+            min-height: 90px;
+            line-height: 90px;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 16px;
+                right: -7px;
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                background-color: #fdd062;
+                opacity: 0.1;
+            }
+
+            .ina_img-counter {
+                height: 60px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        span {
+            text-transform: capitalize;
+            font-family: "Syne", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            position: relative;
+            margin-top: 55px;
+            display: block;
+
+            @include respond("laptop") {
+                font-size: 20px;
+                min-height: 72px;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 50px;
+                background-color: #fdd062;
+                top: -68px;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+            }
+        }
+
+        .title {
+            font-weight: 800;
+            font-size: 50px;
+            padding-top: 15px;
+            font-family: $font_Handlee;
+        }
+    }
+
+    .col-lg-4:last-child {
+        .features-counter {
+            @include respond("phone-land") {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

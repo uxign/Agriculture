@@ -1,0 +1,174 @@
+/************************** 
+* Swiepr Global
+***************************/
+
+.swiper-container {
+    overflow: hidden;
+}
+
+/************************** 
+* swiper wrraper
+***************************/
+
+.ina_swiper-portfolio-one {
+    .ina_portfolio-slider-wraper {
+        min-height: 690px;
+        position: relative;
+
+        @include respond("phone") {
+            min-height: 600px;
+        }
+    }
+}
+
+.ina-portfolio-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    &:before {
+        content: "";
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/************************** 
+* swiper Arrows
+***************************/
+
+.bd-swiper-navigation {
+    display: flex;
+    gap: 17px;
+    justify-content: end;
+    position: absolute;
+    bottom: 217px;
+    z-index: 33;
+    right: 14%;
+
+    button {
+        height: 64px;
+        width: 64px;
+        font-size: 20px;
+        line-height: 64px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid var(--ina-theme-border_color_0);
+        color: var(--ina-theme-color_light_10);
+        background-color: transparent;
+        opacity: 0.5;
+        transform: rotate(-45deg);
+
+        &:hover {
+            opacity: 1;
+            background-color: var(--ina-theme-bg_4);
+            border-color: var(--ina-theme-bg_4);
+        }
+    }
+
+    @include respond("min-and-max-2") {
+        right: 20px;
+    }
+
+    @include respond("respo-1") {
+        justify-content: start;
+        padding-top: 28px;
+        padding-bottom: 5px;
+        right: 15px;
+    }
+
+    @include respond("phone") {
+        justify-content: start;
+        padding-top: 28px;
+        padding-bottom: 5px;
+        right: 15px;
+        bottom: 80px;
+    }
+}
+
+/************************** 
+* swiper Pagination list bottom
+***************************/
+
+.bd-roomview__pagination-wrap {
+    position: relative;
+
+    .bd-roomview__pagination {
+        position: absolute;
+        left: 0 !important;
+        z-index: 33;
+        bottom: 65px !important;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include transition($delay: 0.3s, $function: ease);
+
+        .swiper-pagination-bullet {
+            width: auto;
+            height: auto;
+            border-radius: 0%;
+            opacity: 1;
+            background: transparent;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: var(--ina-theme-color_light_10);
+            @include transition($delay: 0.3s, $function: ease);
+            font-family: "syne";
+
+            &.swiper-pagination-bullet-active {
+                font-size: 36px;
+
+                @include respond("min-and-max-2") {
+                    font-size: 24px;
+                    color: var(--bd-theme-1);
+                }
+
+                @include respond("respo-1") {
+                    font-size: 24px;
+                    color: var(--bd-theme-1);
+                }
+
+                @include respond("phone") {
+                    font-size: 24px;
+                    color: var(--bd-theme-1);
+                }
+            }
+        }
+
+        @include respond("min-and-max-2") {
+            gap: 20px 50px;
+            justify-content: center;
+            bottom: 30px !important;
+        }
+
+        @include respond("respo-1") {
+            gap: 20px 50px;
+            justify-content: center;
+            bottom: 30px !important;
+        }
+
+        @include respond("phone") {
+            gap: 20px 50px;
+            justify-content: center;
+            bottom: 30px !important;
+        }
+    }
+}
+
+.hover-title-box {
+    p {
+        display: initial;
+    }
+}

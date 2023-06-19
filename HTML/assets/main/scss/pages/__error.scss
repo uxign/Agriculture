@@ -1,0 +1,31 @@
+/************************** 
+*  Error 404
+***************************/
+
+.ina-page-404 {
+    .page_title {
+        font-size: 270px;
+        line-height: 1em;
+
+        @include respond("tab-port") {
+            font-size: 111px;
+        }
+    }
+
+    .page_info {
+        .page_subtitle {
+            margin: 20px 0 0;
+            font-size: 47px;
+            line-height: 1.1em;
+        }
+
+        .page_description {
+            margin-top: 17px;
+            margin-bottom: 43px;
+        }
+
+        .ina_button {
+            display: inline;
+        }
+    }
+}

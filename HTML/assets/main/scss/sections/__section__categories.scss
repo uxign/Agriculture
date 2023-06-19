@@ -1,0 +1,56 @@
+/************************** 
+*  Widget Categories
+***************************/
+
+.ina-categories {
+    position: relative;
+
+    .ina-items-categories {
+        text-align: $text-center;
+        padding: 25px;
+        border: 1px solid var(--ina-theme-border_color_7);
+        margin-bottom: 20px;
+        z-index: 2;
+        position: relative;
+        @include transition();
+
+        .ina-items-icons {
+            margin-bottom: 20px;
+        }
+
+        .ina-items-title {
+            span {
+                font-weight: $font-weight-semibold;
+
+                color: var(--ina-theme-color_text_titre_0);
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: var(--ina-theme-bg_2);
+            background-position: center bottom;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+            transition-property: all;
+            transform-origin: bottom;
+            transform-style: preserve-3d;
+            transform: scaleY(0);
+            z-index: -1;
+            -webkit-box-shadow: 0 0 40px rgba(8, 21, 66, 0.05) !important;
+            box-shadow: 0 0 40px rgba(8, 21, 66, 0.05) !important;
+        }
+
+        &:hover {
+            &:before {
+                transform: scaleY(1);
+            }
+        }
+    }
+}

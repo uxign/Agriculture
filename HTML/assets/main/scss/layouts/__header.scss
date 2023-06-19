@@ -1,0 +1,241 @@
+/************************** 
+*  Global Style
+***************************/
+
+.headerTop {
+    .wraper-header-information {
+        @include respond("tab-port") {
+            max-width: 720px;
+            padding-right: var(--bs-gutter-x, 0.75rem) !important;
+            padding-left: var(--bs-gutter-x, 0.75rem) !important;
+        }
+
+        .ina-wraper-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0 20px;
+
+            @include respond("tab-port") {
+                display: none;
+            }
+        }
+    }
+}
+
+/************************** 
+*  Global Style
+***************************/
+
+.ina-position-left,
+.ina_position-right {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    max-width: 300px;
+
+    @include respond("tab-port") {
+        min-width: inherit;
+        max-width: inherit;
+    }
+}
+
+.ina-position-left {
+    @include respond("tab-port") {
+        display: none;
+    }
+}
+
+.ina_position-right svg {
+    cursor: pointer;
+    @include transition($delay: 0.5s, $function: ease-in-out);
+
+    &:hover {
+        stroke: var(--ina-theme-color_2);
+        @include transition($delay: 0.5s, $function: ease-in-out);
+    }
+}
+
+/************************** 
+*  position left
+***************************/
+
+.ina-position-left {
+    .ina-img-author {
+        min-width: 50px;
+        min-height: 50px;
+        margin-right: 10px;
+
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--ina-theme-border_color_1);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include borderRadius(50%);
+
+        @include respond("tab-port") {
+            margin-right: 0;
+            @include borderRadius(0px);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .ina-author-container-text {
+        @include respond("tab-port") {
+            margin-left: 10px;
+        }
+
+        @include respond("mini-phone") {
+            display: none;
+        }
+
+        .header-destination-title {
+            font: {
+                family: $font_syne;
+                weight: $font-weight-bold;
+                size: 17px;
+            }
+
+            display: block;
+        }
+
+        .header-destination-sub-title {
+            font: {
+                weight: $font-weight-medium;
+                size: 14px;
+                style: italic;
+            }
+
+            display: block;
+            color: var(--ina-theme-color_2);
+        }
+    }
+}
+
+/************************** 
+*  position right
+***************************/
+
+.ina_position-right {
+    justify-content: flex-end;
+
+    @include respond("tab-port") {
+        display: none !important;
+    }
+}
+
+/************************** 
+*  Logo
+***************************/
+
+.ina-logo-wrapper {
+    text-align: $text-center;
+    width: 100%;
+    max-width: calc(100% - 600px);
+    padding: 0 10px;
+
+    @include respond("tab-port") {
+        max-width: inherit;
+        width: auto;
+        padding: 0;
+        display: none;
+    }
+}
+
+/************************** 
+*  Header style 1
+***************************/
+
+.header-style-1 {
+    .ina-logo-wrapper {
+        @include respond("tab-port") {
+            max-width: inherit;
+            width: auto;
+            padding: 0;
+            display: none;
+        }
+    }
+
+    .wraper-header-information {
+        .ina-wraper-header-top {
+            @include respond("tab-port") {
+                justify-content: center;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: block;
+            }
+        }
+
+        .ina-logo-wrapper {
+            width: auto;
+        }
+
+        .ina-position-left,
+        .ina_position-right {
+            min-width: auto;
+            max-width: initial;
+        }
+    }
+
+    .ina-position-left {
+        .ina-author-container-text {
+            @include respond("phone-land") {
+                display: block;
+            }
+        }
+    }
+}
+
+/************************** 
+*  Header style 2
+***************************/
+
+.header-style-2 {
+    .wraper-header-information {
+        .ina-wraper-header-top {
+            @include respond("tab-port") {
+                justify-content: center;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                display: inherit;
+            }
+        }
+
+        .ina-logo-wrapper {
+            width: auto;
+
+            .logo-light img {
+                display: block;
+                height: 60px;
+            }
+        }
+
+        .ina-position-left,
+        .ina_position-right {
+            min-width: auto;
+            max-width: initial;
+            justify-content: center;
+        }
+    }
+
+    .ina-position-left {
+        .ina-author-container-text {
+            @include respond("phone-land") {
+                font-size: inherit;
+            }
+        }
+    }
+}
+
+.ina-main-navbar {
+    @include respond("tab-port") {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        background-color: var(--ina-theme-bg_2) !important;
+    }
+}

@@ -1,0 +1,47 @@
+/************************** 
+* Main Fonts
+***************************/
+
+$font_Lora: "Lora", Sans-serif;
+$font_syne: "Syne", sans-serif;
+$font_jost: "Jost", sans-serif;
+$font_Handlee: "Handlee", cursive;
+$font_fontello: "cart";
+
+/************************** 
+* Text Align
+***************************/
+
+$text-left: left;
+$text-center: center;
+
+/************************** 
+* Font-weight
+***************************/
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+/************************** 
+* Box Shadow
+***************************/
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
+    box-shadow: 0 0 40px rgba(8, 21, 66, 5%) !important;
+}
+
+/************************** 
+* Box Sizing
+***************************/
+
+.box-sizing {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
