@@ -50,7 +50,6 @@
 
     &:hover {
         .ina_side-line {
-
             &.ina-line-1,
             &.ina-line-3 {
                 top: 50%;
@@ -354,7 +353,7 @@
     }
 }
 
-.ina-post-item+.ina-post-item {
+.ina-post-item + .ina-post-item {
     margin-top: 1.6em;
 }
 
@@ -592,7 +591,7 @@ blockquote {
         .comment {
             position: relative;
 
-            >div {
+            > div {
                 border-bottom: 1px solid var(--ina-theme-border_color_7);
                 padding: 32px 0px 32px 0px;
             }
@@ -753,7 +752,7 @@ blockquote {
         }
     }
 
-    input:checked+label:after {
+    input:checked + label:after {
         content: "";
         display: block;
         position: absolute;
@@ -944,7 +943,7 @@ article {
                 text-align: $text-left;
                 line-height: 1.2em;
 
-                // 
+                //
 
                 overflow: hidden;
                 width: 100%;
@@ -1049,10 +1048,40 @@ article {
     }
 }
 
-
 /******************************* 
 *  Cursor
 ********************************/
+
+.js-cursor {
+    position: absolute;
+    .drag {
+        .c-cursor__inner {
+            position: relative;
+        }
+
+        &:before {
+            content: "\f0ec";
+            font-family: "cart";
+            display: block;
+            border-radius: 100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 36%;
+            font-size: 20px;
+        }
+    }
+}
+
+.c-cursor__inner--circle.drag {
+    width: 75px;
+    height: 75px;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    background: #323232;
+    mix-blend-mode: unset;
+}
 
 @media (any-pointer: fine) {
     .c-cursor {
@@ -1156,7 +1185,7 @@ article {
         padding-left: 9px;
         position: relative;
 
-        >* {
+        > * {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1212,7 +1241,7 @@ article {
         .time {
             display: flex;
 
-            >* {
+            > * {
                 padding: 2px;
             }
         }
@@ -1422,8 +1451,8 @@ article {
     padding: 50px;
     margin-bottom: 60px;
 
-    @include respond('min-and-max-2') {}
-
+    @include respond("min-and-max-2") {
+    }
 
     .ina_project-basic-info {
         padding-left: 0;
@@ -1434,7 +1463,7 @@ article {
         grid-column-gap: 30px;
         grid-row-gap: 15px;
 
-        @include respond('min-and-max-2') {
+        @include respond("min-and-max-2") {
             display: block;
         }
 
@@ -1442,14 +1471,14 @@ article {
             font-weight: 800;
             color: #ffffff;
 
-            @include respond('min-and-max-2') {
+            @include respond("min-and-max-2") {
                 margin-top: 15px;
                 padding-top: 15px;
                 border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
 
             &:first-child {
-                @include respond('min-and-max-2') {
+                @include respond("min-and-max-2") {
                     margin: 0;
                     padding: 0;
                     border: none;
@@ -1466,8 +1495,7 @@ article {
             }
 
             a {
-
-                @include respond('min-and-max-2') {
+                @include respond("min-and-max-2") {
                     float: none;
                     margin-top: 15px;
                 }
@@ -1483,7 +1511,6 @@ article {
         }
     }
 }
-
 
 /************************** 
 *  Project info
@@ -1509,7 +1536,7 @@ article {
     text-align: center;
     margin-bottom: 30px;
 
-    @include respond('mini-phone') {
+    @include respond("mini-phone") {
         display: flex;
         flex-direction: column;
     }
@@ -1521,8 +1548,6 @@ article {
     }
 }
 
-
-
 .ina_benefit-item-icon {
     margin-bottom: 15px;
 
@@ -1530,7 +1555,6 @@ article {
         height: 50px;
     }
 }
-
 
 /************************** 
 *  ina services item 1
@@ -1543,8 +1567,7 @@ article {
     gap: 30px;
     margin-bottom: 30px;
 
-
-    @include respond('mini-phone') {
+    @include respond("mini-phone") {
         display: flex;
         flex-direction: column;
     }
@@ -1559,5 +1582,4 @@ article {
         margin-bottom: 0;
         margin-left: 15px;
     }
-
 }

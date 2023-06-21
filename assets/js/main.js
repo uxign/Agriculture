@@ -327,11 +327,6 @@ $(function () {
     }
 
 
-
-
-
-
-
     /*========== Ajax Contact Form  ==========*/
     jQuery('.contact-form').on("submit", function () {
 
